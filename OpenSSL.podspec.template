@@ -1,0 +1,21 @@
+
+Pod::Spec.new do |s|
+    s.name          = 'OpenSSL'
+    s.version       = '$VERSION$'
+    s.summary       = 'Fuse Module for incorporating native-views into a Fuse application'
+    s.homepage      = 'https://fuse.breautek.com'
+    s.author        = { 'OpenSSL' => 'norman@breautek.com' }
+    s.license       = {
+        :type => 'Apache-2.0',
+        :file => 'OpenSSL.xcframework/LICENSE'
+    }
+
+    s.ios.deployment_target = '15.0'
+    
+    s.source        = {
+        :http => 'https://github.com/btfuse/openssl/releases/download/$VERSION$/OpenSSL.xcframework.zip',
+        :sha1 => '$CHECKSUM$'
+    }
+
+    s.vendored_frameworks = 'OpenSSL.xcframework'
+end

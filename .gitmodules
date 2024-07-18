@@ -1,0 +1,6 @@
+[submodule "third_party/openssl"]
+	path = third_party/openssl
+	url = https://github.com/openssl/openssl.git
+[submodule "build-tools"]
+	path = build-tools
+	url = https://github.com/btfuse/build-tools.git
