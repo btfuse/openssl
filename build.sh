@@ -74,6 +74,7 @@ xcodebuild -create-xcframework \
     -library $simBuild/libopenssl.a -headers $simBuild/openssl/include \
     -output dist/OpenSSL.xcframework
 assertLastCall
+cp LICENSE dist/OpenSSL.xcframework/LICENSE
 
 spushd dist
     zip -r OpenSSL.xcframework.zip OpenSSL.xcframework > /dev/null
